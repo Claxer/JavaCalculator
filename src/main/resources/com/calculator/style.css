@@ -1,0 +1,68 @@
+.calculator-root {
+    -fx-background-color: #171717;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.app-title {
+    -fx-text-fill: #f5f5f7;
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+}
+
+.expression {
+    -fx-text-fill: #929292;
+    -fx-font-size: 13px;
+    -fx-min-height: 18px;
+}
+
+.display {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 39px;
+    -fx-border-color: transparent;
+    -fx-padding: 4px 0px;
+}
+
+.button {
+    -fx-background-radius: 18px;
+    -fx-border-radius: 18px;
+    -fx-font-size: 21px;
+    -fx-cursor: hand;
+    -fx-focus-traversable: false;
+}
+
+.number-button {
+    -fx-background-color: #303030;
+    -fx-text-fill: #ffffff;
+}
+
+.number-button:hover {
+    -fx-background-color: #414141;
+}
+
+.utility-button {
+    -fx-background-color: #a5a5a5;
+    -fx-text-fill: #151515;
+    -fx-font-size: 17px;
+}
+
+.utility-button:hover {
+    -fx-background-color: #c0c0c0;
+}
+
+.operator-button {
+    -fx-background-color: #ff9f0a;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 25px;
+}
+
+.operator-button:hover,
+.equals-button:hover {
+    -fx-background-color: #ffb340;
+}
+
+.equals-button {
+    -fx-background-color: #ff9f0a;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
