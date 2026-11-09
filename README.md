@@ -1,6 +1,8 @@
 # Java Calculator Pro
 
-A modern, Apple-inspired desktop calculator built with **Java 25, JavaFX, CSS, and Maven**. Java Calculator Pro features a clean dark interface designed for simple, convenient, and efficient calculations. The project is being expanded with scientific functions, calculation history, memory management, and customizable settings.
+A modern, Apple-inspired desktop calculator built with **Java 25, JavaFX, CSS, and Maven**. Java Calculator Pro features a clean, customizable interface designed for simple, convenient, and efficient calculations. It includes basic arithmetic, scientific functions, calculation history, memory management, customizable settings, and a dedicated Programmer Mode for number-system conversions and bitwise operations.
+
+The project is continuously being expanded with additional functionality and interface improvements.
 
 ## Features
 
@@ -22,6 +24,21 @@ A modern, Apple-inspired desktop calculator built with **Java 25, JavaFX, CSS, a
 - **Parentheses** — Evaluate expressions with grouped operations.
 - **Degree and Radian Modes** — Switch between DEG and RAD for trigonometric calculations.
 
+### Programmer Mode
+- **Number System Conversion** — Convert values between Binary, Octal, Decimal, and Hexadecimal.
+- **Binary Support** — Work with base-2 number representations.
+- **Octal Support** — Work with base-8 number representations.
+- **Decimal Support** — Work with base-10 integer values.
+- **Hexadecimal Support** — Work with base-16 number representations.
+- **Bitwise AND** — Perform bitwise AND operations.
+- **Bitwise OR** — Perform bitwise OR operations.
+- **Bitwise XOR** — Perform bitwise exclusive OR operations.
+- **Bitwise NOT** — Invert the bits of an integer.
+- **Bit Shifting** — Perform left-shift and right-shift operations.
+- **Integer Arithmetic** — Addition, subtraction, multiplication, and division using integer values.
+- **Input Validation** — Validate number-system inputs and handle invalid values.
+- **Large Integer Support** — Uses Java's `BigInteger` for integer-based programmer calculations.
+
 ### Calculation History
 - **Automatic History Saving** — Save completed calculations.
 - **Persistent History** — Keep previous calculations after closing the application.
@@ -40,7 +57,11 @@ A modern, Apple-inspired desktop calculator built with **Java 25, JavaFX, CSS, a
 - **Saved Preferences** — Store settings between application sessions.
 - **Copy Results** — Copy displayed results to the clipboard.
 - **Keyboard Support** — Use keyboard shortcuts for common actions.
-- **Minimalist Design** — Charcoal backgrounds, grey buttons, and orange operators.
+- **Modern CSS Styling** — Updated dark and light themes with improved colors, spacing, borders, and typography.
+- **Interactive Buttons** — Rounded buttons with hover and pressed visual states.
+- **Improved Calculator Display** — Refined display styling with better readability.
+- **Styled Interface Controls** — Updated text fields, combo boxes, checkboxes, history lists, and scrollbars.
+- **Minimalist Design** — Charcoal backgrounds, subtle grey panels, and warm orange operator accents.
 
 ## Technologies Used
 
@@ -50,6 +71,7 @@ A modern, Apple-inspired desktop calculator built with **Java 25, JavaFX, CSS, a
 - Apache Maven
 - Java Properties
 - Java NIO File Handling
+- Java BigInteger
 
 ## Requirements
 
@@ -88,7 +110,9 @@ JavaCalculator/
         │           ├── CalculatorEngine.java
         │           ├── HistoryManager.java
         │           ├── MemoryManager.java
-        │           └── SettingsManager.java
+        │           ├── SettingsManager.java
+        │           ├── ProgrammerModeManager.java
+        │           └── ProgrammerModeWindow.java
         └── resources/
             └── com/
                 └── calculator/
@@ -97,11 +121,20 @@ JavaCalculator/
 
 ## Current Status
 
-The project has been expanded beyond its original basic calculator implementation.
+Java Calculator Pro has grown beyond its original basic calculator implementation.
 
-The supporting Java classes and upgraded application code now include scientific calculations, persistent history, memory functions, and customizable settings.
+The project currently includes:
 
-The upgraded interface and all features still need to be tested together to confirm that they work correctly in the running application.
+- Basic arithmetic and scientific calculations.
+- Expression parsing and mathematical functions.
+- Persistent calculation history.
+- Calculator memory management.
+- Customizable settings and saved preferences.
+- A dedicated Programmer Mode window.
+- Number-system conversion and bitwise operations.
+- An upgraded CSS theme for a more polished desktop interface.
+
+The project remains under active development. Newly added features and interface changes should be tested together in the running application to verify their behavior.
 
 ## Learning Objectives
 
@@ -112,6 +145,8 @@ This project is designed to practice:
 - Creating and managing user interfaces with CSS.
 - Implementing mathematical operations and expression parsing.
 - Working with collections and data management.
+- Using BigInteger for large integer calculations.
+- Implementing number-system conversions and bitwise operations.
 - Reading and writing local files.
 - Saving application settings using Java Properties.
 - Managing dependencies with Maven.
@@ -124,6 +159,7 @@ This project is designed to practice:
 - More flexible keyboard shortcuts.
 - Undo and redo functionality.
 - Calculation history search and management.
+- More advanced Programmer Mode features.
 - Sound effects and additional interface customization.
 - Improved expression validation and error messages.
 - Additional calculator themes.
