@@ -111,16 +111,35 @@ public class App extends Application {
         Button historyButton = createButton("History", "utility-button");
         Button settingsButton = createButton("Settings", "utility-button");
         Button copyButton = createButton("Copy", "utility-button");
+        Button programmerButton = createButton("Prog", "utility-button");
+
+        programmerButton.setTooltip(
+                new Tooltip("Open Programmer Mode")
+        );
 
         historyButton.setOnAction(event -> toggleHistory());
         settingsButton.setOnAction(event -> showSettings(stage));
         copyButton.setOnAction(event -> copyResult());
 
+        programmerButton.setOnAction(event -> {
+            ProgrammerModeWindow programmerWindow =
+                    new ProgrammerModeWindow();
+
+            programmerWindow.show(stage);
+        });
+
         Region spacer = new Region();
         HBox.setHgrow(spacer, Priority.ALWAYS);
 
-        HBox topBar = new HBox(8, title, spacer, copyButton,
-                historyButton, settingsButton);
+        HBox topBar = new HBox(
+                8,
+                title,
+                spacer,
+                programmerButton,
+                copyButton,
+                historyButton,
+                settingsButton
+        );
 
         topBar.setAlignment(Pos.CENTER_LEFT);
 
